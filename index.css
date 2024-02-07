@@ -1,0 +1,378 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* border:1px solid; */
+    /* overflow:hidden; */
+}
+:root {
+    --background1:rgb(247, 243, 243);
+    --button1:rgb(73, 227, 238);
+}
+body {
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    background-color: var(--background1);
+}
+.hero-header {
+    height:10vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+.hero-header a {
+    text-decoration:none;
+    background-color: var(--button1);
+    padding:5px;
+    border-radius: 10px;
+    color:black;
+}
+.hero-body {
+    display:flex;
+    height:90vh;
+}
+.hero-body-right {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.hero-body-left {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+.hero-buttons {
+    width:70%;
+    display:flex;
+    gap:20px;
+}
+.hero-buttons a {
+    background-color: rgb(255, 18, 18);
+    color:white;
+    padding:5px 10px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:800;
+}
+.hero-message h1 {
+    margin-bottom:20px;
+}
+.signup-body {
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    justify-content:center;
+    align-items:center;
+}
+.signup-body form {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+/* input*/
+form input, td input {
+    height:5vh;
+    border:none;
+    border-left:5px solid rgb(85, 78, 78);
+    padding-left:5px;
+}
+form input:focus {
+    outline:none;
+}
+form button,td button {
+    width:100px;
+    height:4vh;
+    margin:0 auto;
+    background-color: var(--button1);
+    border:1px solid rgb(62, 171, 243);
+    border-radius:15px;
+    cursor:pointer;
+}
+form a {
+    text-decoration:none;
+    color: var(--button1);
+    font-weight:800;
+}
+.signup-body a {
+    text-decoration: none;
+    color:blue;
+}
+.error-list {
+    width:100%;
+}
+.error-list li{
+    margin:0 auto;
+    color:red;
+    width:80%;
+    text-align:center;
+    /* border:1px solid; */
+}
+.admin-body {
+    height:90vh;
+    display:flex;
+}
+.tres-body {
+    height:90vh;
+    overflow:scroll;
+}
+.admin-body .left, .admin-body .right {
+    /* border:1px solid; */
+    width:100%;
+}
+.tres-body .left, .tres-body .right {
+    /* border:1px solid; */
+    width:100%;
+}
+.right table {
+    width:100%;
+    border:none;
+}
+.form1, .form2 {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+table tr {
+    width:100%;
+    overflow-x: scroll;
+}
+.form1 input, .form1 td{
+    width:35%;
+}
+
+td input {
+    width:100%;
+}
+.leftTwo table {
+    width:max-content;
+    height:min-content;
+
+}
+.leftTwo table td {
+    width:150px;
+}
+.user-names {
+    border:1px solid;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.5rem;
+    font-weight:800;
+}
+.account-body {
+    width:100vw;
+    height:90vh;
+    padding:50px 20px;
+    display:flex;
+    justify-content:space-between;
+    padding-top:50px;
+}
+.acc-left {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    gap:10px;
+    width:40%;
+    height:70vh;
+    padding-left:5px;
+}
+.acc-right {
+    width:40%;
+    background-color: rgb(226, 216, 216);
+    border-radius: 20px;
+    height:70vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+.acc-right * {
+    width:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align:center;
+    padding-bottom:20px;
+}
+#acc-savings {
+    background-color: rgb(233, 16, 16);
+}
+#acc-funds {
+    background-color: rgb(13, 204, 13);
+}
+#acc-project {
+    background-color: rgb(59, 59, 211);
+}
+#acc-loan {
+    background-color: rgb(241, 241, 14);
+}
+.acc-title {
+    height:max-content;
+    max-height: max-content;
+    background-color: rgb(59, 223, 235);
+    padding:10px;
+    border-radius:20px;
+    width:200px;
+    text-align:center;
+    font-weight:800;
+}
+.acc-content {
+    background-color: rgb(211, 208, 208);
+    padding:10px;
+    width:200px;
+    text-align:left;
+    font-size: 1.5rem;
+    font-weight:700;
+
+}
+.account-username {
+    display:flex;
+    gap:50px;
+}
+#loan-form {
+    height:20vh;
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    align-items:Center;
+    justify-content:space-around;
+}
+#loan-form input {
+    height:4vh;
+    margin:10px 0;
+}
+#loan-form p {
+    color:green;
+    font-weight:700;
+    text-align: center;
+}
+#loan-form button {
+    height:max-content;
+    width:max-content;
+    padding:5px;
+}
+.tres-body .right table {
+    max-width:100vw;
+    display:initial;
+}
+.tres-body .right table tr td {
+    padding:6px;
+}
+
+@media screen and (min-width:1000px) {
+    .hero-header {
+        font-size: 1.2rem;
+    }
+    .hero-body-right {
+        width:60%;
+    }
+    .hero-body-right img {
+        width:90%;
+        height:80vh;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    .hero-body-left {
+        width:40%;
+
+    }
+    .hero-message {
+        width:70%;
+    }
+    .hero-message h1 {
+        font-size:2.5rem;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    * {
+        /* border:1px solid; */
+    }
+    .hero-body {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .hero-body-right {
+        width:inherit;
+        height:50vh;
+    }
+    .hero-body-right img {
+        height:inherit;
+        width:96%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .hero-body-left {
+        height:40vh;
+    }
+    .hero-message {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        color:black;
+    }
+    .hero-buttons {
+        width:60%;
+        justify-content: space-around;
+    }
+    .admin-body {
+        flex-direction:column;
+        overflow:scroll;
+    }
+    .admin-body .right, .admin-body .left {
+        width:100%;
+    }
+
+    .account-body {
+        flex-direction:column;
+        justify-content: space-between;
+        gap:20px;
+        overflow: scroll;
+    }
+       .acc-left {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width:98%;
+        height:80vh;
+        padding:10px;
+    }
+        .acc-right {
+            width:98%;
+            height:80vh;
+        }
+        .acc-right div {
+            height:80vh;
+        }
+        .acc-right * {
+            width:100px;
+        }
+        #acc-loan {
+            display:none;
+        }
+       .acc-title {
+        padding:10px;
+        border-radius:20px;
+        width:50%;
+        font-size:0.7rem;
+        text-align:center;
+        font-weight:800;
+    }
+    .acc-content {
+        text-align:left;
+        width:45%;
+        font-size: 0.7rem;
+        font-weight:700;
+    }
+    #loan-form {
+        width:98%;
+        height:30vh;
+    }
+}
